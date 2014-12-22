@@ -1,0 +1,21 @@
+.wrapClass p, span {
+    padding-left: 20px;
+}
+
+.wrapClass h1{
+    padding-left: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+.wrapClass span{
+    color: red;
+    font-weight: bold;
+}
+
+.wrapClass img{
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin-right: 40px;
+}

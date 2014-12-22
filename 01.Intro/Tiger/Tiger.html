@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Tiger">
+<head>
+    <meta charset="utf-8">
+    <title>Tiger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div ng-controller="Tiger" ng-style="myStyle" ng-class="wrap">
+    <h1  >TIGER</h1>
+    <img ng-src="{{hash}}" />
+    <p><span>Name:</span> {{name}}</p>
+    <p><span>Born: </span> {{born}}</p>
+    <p><span>Birth Date: </span> {{birthDate}}</p>
+    <p><span>Live: </span> {{live}}</p>
+</div>
+
+<script src="../Student-Page/node_modules/angular/angular.js"></script>
+<script type="text/javascript">
+    var app = angular.module('Tiger', []);
+
+    app.controller('Tiger', function($scope){
+        $scope.name = "Pesho";
+        $scope.hash = "http://tigerday.org/wp-content/uploads/2013/04/tiger.jpg";
+        $scope.born = 'Asia';
+        $scope.birthDate = 2006;
+        $scope.live = "Sofia Zoo";
+
+        $scope.myStyle = {
+            'width': '550px',
+            'background-color': 'lightgray',
+            'color': 'blue',
+            'span': 'bold'
+
+        }
+        $scope.wrap = 'wrapClass';
+
+
+    });
+
+</script>
+</body>
+</html>

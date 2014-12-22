@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bindImage">
+<head>
+    <meta charset="utf-8">
+    <title>Bind Image</title>
+</head>
+<body>
+<h1>Input img url, for example</h1>
+
+<p>http://www.nakov.com/wp-content/uploads/2014/05/SoftUni-Logo.png</p>
+<input type="text" ng-model="bindImage">
+<br>
+
+<img ng-src="{{bindImage}}"/>
+
+<script src="../Student-Page/node_modules/angular/angular.js"></script>
+<script type="text/javascript">
+    var app = angular.module('bindImage', []);
+</script>
+</body>
+</html>

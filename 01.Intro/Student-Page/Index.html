@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="studentPage">
+<head>
+    <meta charset="utf-8">
+    <title>Student Page</title>
+</head>
+<body>
+	<h1 ng-controller="Student">Hello, {{name}}!</h1>
+	<img ng-controller="Student" ng-src="{{hash}}"/>
+	<p ng-controller="Student">Grade: {{grade}}</p>
+	<p ng-controller="Student">School: {{school}}</p>
+	<p ng-controller="Student">Teacher: {{teacher}}</p>
+
+	
+	<script src="./node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript">
+		var app = angular.module('studentPage', []);
+		
+		app.controller('Student', function($scope){
+			$scope.welcomeMsg = "Hello Student";
+			$scope.name = "Pesho";
+			$scope.hash = "http://www.nakov.com/wp-content/uploads/2014/05/SoftUni-Logo.png";
+			$scope.grade = 5;
+			$scope.school = "High School of Mathematics";
+			$scope.teacher = "Gichka Pesheva";
+		});
+    </script>
+</body>
+</html>
