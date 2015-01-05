@@ -4,6 +4,7 @@
     <list default="true" id="4c21a6fd-8d28-49ec-834e-7929672ce555" name="Default" comment="" />
     <ignored path="Ads-Project.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
