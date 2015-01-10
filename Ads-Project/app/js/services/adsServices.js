@@ -22,6 +22,25 @@ app.factory('adsService',
     }
 );
 
+app.factory('userAdsService',
+    function ($resource, baseServiceUrl) {
+        var userAdsService = $resource(
+            baseServiceUrl + '/api/user/ads',
+            null,
+            {
+                'getAll': {method:'GET'}
+            }
+        );
+
+        return {
+            getAds: function(params, success, error) {
+                return userAdsService.getAll(params, success, error);
+            }
+        }
+    }
+);
+
+
 app.factory('townsService',
     function ($resource, baseServiceUrl) {
         var townsResource = $resource(

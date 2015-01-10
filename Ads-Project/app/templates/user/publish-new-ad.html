@@ -30,6 +30,11 @@
     </p>
 
     <p>
+        <label for="image">Image:</label>
+        <input type="file" id="image" ng-model="adData.ImageDataURL" >
+        <image src="{{adData.ImageDataURL}}" ng-src="adData.ImageDataURL"></image>
+    </p>
+    <p>
         <a ng-click="publishAd(adData)" class="button">Publish</a>
         <a href="#/user/ads" class="button">Cancel</a>
     <p>

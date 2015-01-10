@@ -21,14 +21,6 @@ app.factory('userService',
                     params: params
                 };
                 $http(request).success(success).error(error);
-            },
-
-            deactivateAd: function (id, success, error) {
-                // TODO
-            },
-
-            publishAgainAd: function (id, success, error) {
-                // TODO
             }
         }
     }

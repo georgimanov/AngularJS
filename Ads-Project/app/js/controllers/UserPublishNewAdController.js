@@ -7,6 +7,7 @@ app.controller('UserPublishNewAdController',
         $scope.categories = categoriesService.getCategories();
         $scope.towns = townsService.getTowns();
 
+
         $scope.publishAd = function(adData) {
             userService.createNewAd(adData,
                 function success() {

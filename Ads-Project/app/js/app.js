@@ -18,14 +18,12 @@ app.run(function ($rootScope, $location, authService) {
     });
 });
 
-
 app.config(function ($routeProvider) {
 
     $routeProvider.when('/', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     });
-
 
 
     $routeProvider.when('/login', {
@@ -36,6 +34,16 @@ app.config(function ($routeProvider) {
     $routeProvider.when('/register', {
         templateUrl: 'templates/register.html',
         controller: 'RegisterController'
+    });
+
+    $routeProvider.when('/user/ads', {
+        templateUrl: 'templates/user/list-ads.html',
+        controller: 'UserAdsController'
+    });
+
+    $routeProvider.when('/user/editProfile', {
+        templateUrl: 'templates/user/edit-profile.html',
+        controller: 'UserPublishNewAdController'
     });
 
     $routeProvider.when('/user/ads/publish', {
