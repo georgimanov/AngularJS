@@ -14,7 +14,7 @@ app.controller('RegisterController',
             authService.register(userData,
                 function success() {
                     notifyService.showError("Registration successful", err);
-                    // TODO: redirect to login screen
+                    $location.path('/login');
                 },
                 function error(err) {
                     notifyService.showError("User registration failed", err);

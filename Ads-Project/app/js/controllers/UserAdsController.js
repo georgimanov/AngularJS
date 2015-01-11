@@ -1,12 +1,16 @@
 'use strict';
 
 app.controller('UserAdsController',
-    function ($scope, $routeParams, $location, userService, notifyService, pageSize) {
+    function ($scope, $routeParams, $location, townsService, categoriesService, userService, notifyService, pageSize) {
         $scope.adsParams = {
             'startPage' : 1,
             'pageSize' : pageSize,
             'Status': $routeParams.id
         };
+
+        $scope.categories = categoriesService.getCategories();
+        $scope.towns = townsService.getTowns();
+
         if ($routeParams.id == 'all') {
             $scope.adsParams.Status = null;
         }

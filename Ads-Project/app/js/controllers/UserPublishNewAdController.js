@@ -3,7 +3,11 @@
 app.controller('UserPublishNewAdController',
     function ($scope, $location, townsService, categoriesService,
               userService, notifyService) {
-        $scope.adData = {townId: null, categoryId: null};
+        $scope.adData = {
+            townId: null,
+            categoryId: null
+        };
+
         $scope.categories = categoriesService.getCategories();
         $scope.towns = townsService.getTowns();
         $scope.adData.imageUrl = '';
