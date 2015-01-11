@@ -11,6 +11,7 @@ app.controller('UserAdsController',
             $scope.adsParams.Status = null;
         }
 
+
         $scope.reloadUserAds = function() {
             userService.getUserAds(
                 $scope.adsParams,

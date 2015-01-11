@@ -13,8 +13,6 @@ app.controller('AppController',
                     notifyService.showInfo("Logout successful");
                     $location.path("/");
                 });
-            // TODO: display "Logout successful" notification
-            // TODO: redirect to the application home page
         };
     }
 );

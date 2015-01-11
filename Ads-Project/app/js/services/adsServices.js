@@ -4,6 +4,8 @@
 
 'use strict';
 
+app.constant('defaultImg', 'http://www.paolobugatti.com/img/img-default.png');
+
 app.factory('adsService',
     function ($resource, baseServiceUrl) {
         var adsResource = $resource(

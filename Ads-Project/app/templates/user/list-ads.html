@@ -1,5 +1,5 @@
 <div class="box">
-    <h2>List / Ads</h2>
+    <h2>My ads list</h2>
 
     <pagination total-items="ads.numItems" ng-model="adsParams.startPage"
                 items-per-page="adsParams.pageSize" ng-change="reloadUserAds()"
@@ -9,17 +9,26 @@
 
     <ul class="ads">
         <li ng-repeat="ad in ads.ads" class="box" data-id="{{ad.id}}">
-            <h1>{{ad.title}}</h1>
-            <div><strong>Date:</strong> {{ad.date | date:'dd-MMM-yyyy'}}</div>
-            <div ng-if='ad.imageDataUrl'>
-                <strong>Image:</strong><img class="ad-image" ng-src="{{ad.imageDataUrl}}" />
+            <div class="row">
+                <div class="col-md-9 pull-left"><h2>{{ad.title}}</h2></div>
+                <div class="col-md-3 pull-right"><p class="text-right"><strong>{{ad.date | date:'dd-MMM-yyyy'}}</strong></p></div>
             </div>
-            <div><strong>Text:</strong> {{ad.text}}</div>
-            <div><strong>Status:</strong> {{ad.status}}</div>
-            <button ng-if="ad.status == 'WaitingApproval' || ad.status == 'Published'" ng-click="deactivateAd(ad.id)">Deactivate</button>
-            <button ng-if="ad.status == 'Inactive'"><a href="#/user/edit/{{ad.id}}">Edit</a></button>
-            <button ng-if="ad.status == 'Inactive'" ng-click="publishAgainAd(ad.id)">Publish Again</button>
-            <button ng-if="ad.status == 'Inactive'"><a href="#/user/delete/{{ad.id}}">Delete</a></button>
+            <div class="row">
+                <div class="col-md-3">
+                    <div ng-if='ad.imageDataUrl'>
+                        <img class="ad-image" ng-src="{{ad.imageDataUrl}}" />
+                    </div>
+                    <div ng-if='!ad.imageDataUrl'>
+                        <img class="ad-image" ng-src="http://www.paolobugatti.com/img/img-default.png">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div><strong>Text:</strong> {{ad.text}}</div>
+                    <div><strong>Category:</strong><p class="bg-info"> {{ad.categoryId}}... </p></div>
+                    <div><strong>Town:</strong> <p class="bg-info"> {{ad.townId}}... </p></div>
+                </div>
+            </div>
+
         </li>
     </ul>
 
