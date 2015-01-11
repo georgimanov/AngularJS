@@ -5,7 +5,6 @@
 
 app.controller('UserEditController',
     function ($scope, $location, townsService, authService, userService, notifyService) {
-        $scope.authService = authService;
         $scope.towns = townsService.getTowns();
         $scope.password = {};
 
