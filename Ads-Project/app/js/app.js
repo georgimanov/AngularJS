@@ -18,6 +18,8 @@ app.run(function ($rootScope, $location, authService) {
     });
 });
 
+app.constant('defaultImg', 'http://www.paolobugatti.com/img/img-default.png');
+
 app.config(function ($routeProvider) {
 
     $routeProvider.when('/', {

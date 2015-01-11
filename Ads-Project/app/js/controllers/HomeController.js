@@ -4,7 +4,7 @@
 'use strict';
 
 app.controller('HomeController',
-    function ($scope, adsService, notifyService, pageSize) {
+    function ($scope, adsService, notifyService, pageSize, defaultImg) {
         $scope.adsParams = {
             'startPage' : 1,
             'pageSize' : pageSize
@@ -34,6 +34,8 @@ app.controller('HomeController',
         });
 
         $scope.reloadAds();
+        $scope.defaultImg = defaultImg;
+
 
     }
 );
