@@ -10,22 +10,30 @@
     <ul class="ads">
         <li ng-repeat="ad in ads.ads" class="box" data-id="{{ad.id}}">
             <div class="row">
-                <div class="col-md-9 pull-left"><h2>{{ad.title}}</h2></div>
-                <div class="col-md-3 pull-right"><p class="text-right"><strong>{{ad.date | date:'dd-MMM-yyyy'}}</strong></p></div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div ng-if='ad.imageDataUrl'>
-                        <img class="ad-image" ng-src="{{ad.imageDataUrl}}" />
+                <div class="col-md-9">
+                    <h2>{{ad.title}}</h2>
+                    <p class="col-md-offset-10">{{ad.date | date:'dd-MMM-yyyy'}}</p>
+                    <div class="col-md-3 ">
+                        <div ng-if='ad.imageDataUrl'>
+                            <img class="ad-image" ng-src="{{ad.imageDataUrl}}" />
+                        </div>
+                        <div ng-if='!ad.imageDataUrl'>
+                            <img class="ad-image" ng-src="http://www.paolobugatti.com/img/img-default.png">
+                        </div>
                     </div>
-                    <div ng-if='!ad.imageDataUrl'>
-                        <img class="ad-image" ng-src="http://www.paolobugatti.com/img/img-default.png">
+                    <div class="col-md-8 col-md-offset-1">
+                        <div><strong>Text:</strong><p class="bg-info"> {{ad.text}} </p></div>
+                        <div><strong>Category:</strong><p class="bg-info"> {{ad.categoryId}}... </p></div>
+                        <div><strong>Town:</strong> <p class="bg-info"> {{ad.townId}}... </p></div>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <div><strong>Text:</strong> {{ad.text}}</div>
-                    <div><strong>Category:</strong><p class="bg-info"> {{ad.categoryId}}... </p></div>
-                    <div><strong>Town:</strong> <p class="bg-info"> {{ad.townId}}... </p></div>
+                <div class="col-md-3">
+                    <div class="clearfix"><h1>Status:</h1></div>
+                    <p class="bg-info"> {{ad.status}} </p>
+                    <button ng-if="ad.status == 'WaitingApproval' || ad.status == 'Published'" ng-click="deactivateAd(ad.id)">Deactivate</button>
+                    <button ng-if="ad.status == 'Inactive'"><a href="#/user/edit/{{ad.id}}">Edit</a></button>
+                    <button ng-if="ad.status == 'Inactive'" ng-click="publishAgainAd(ad.id)">Publish Again</button>
+                    <button ng-if="ad.status == 'Inactive'"><a href="#/user/delete/{{ad.id}}">Delete</a></button>
                 </div>
             </div>
 
