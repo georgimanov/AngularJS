@@ -37,6 +37,10 @@ app.factory('userAdsService',
         return {
             getAds: function(params, success, error) {
                 return userAdsService.getAll(params, success, error);
+            },
+
+            menuAds : function() {
+                return true;
             }
         }
     }

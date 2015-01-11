@@ -27,6 +27,18 @@
     </ul>
 </div>
 
+<!-- Navigation box for logged in normal users (not admins) & checking ads-->
+<div ng-if="userAdsService.menuAds()" class="box">
+    <h2>Navigation 2</h2>
+    <ul class="sidebar-menu">
+        <li><a href="#/">All</a></li>
+        <li><a href="#/user/ads">Published</a></li>
+        <li><a href="#/user/ads/publish">Waiting approval</a></li>
+        <li><a href="#/user/editProfile">Inactive</a></li>
+        <li><a href="#/user/editProfile">Recejted</a></li>
+    </ul>
+</div>
+
 <!-- Navigation box for logged in admins -->
 <div ng-if="authService.isAdmin()" class="box">
     <h2>Navigation</h2>
