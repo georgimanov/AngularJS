@@ -35,19 +35,19 @@
         <li><a href="#/user/ads">Published</a></li>
         <li><a href="#/user/ads/publish">Waiting approval</a></li>
         <li><a href="#/user/editProfile">Inactive</a></li>
-        <li><a href="#/user/editProfile">Recejted</a></li>
+        <li><a href="#/user/editProfile">Rejected</a></li>
     </ul>
 </div>
 
 <!-- Navigation box for logged in admins -->
 <div ng-if="authService.isAdmin()" class="box">
-    <h2>Navigation</h2>
+    <h2>Admin navigation</h2>
     <ul class="sidebar-menu">
         <li><a href="#/">Home</a></li>
-        <li><a href="#/user/ads">My Ads</a></li>
-        <li><a href="#/user/ads/publish-new-ad">Publish New Add</a></li>
-        <li><a href="#/user/editProfile">Edit Profile</a></li>
-        <li><a ng-click="logout()">Logout</a></li>
+        <li><a href="#/admin/ads">Ads</a></li>
+        <li><a href="#/admin/users">Users</a></li>
+        <li><a href="#/admin/categories">Categories</a></li>
+        <li><a href="#/admin/towns">Towns</a></li>
     </ul>
 </div>
 

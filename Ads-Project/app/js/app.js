@@ -37,6 +37,26 @@ app.config(function ($routeProvider) {
         controller: 'RegisterController'
     });
 
+    $routeProvider.when('/admin/ads', {
+        templateUrl: 'templates/admin/ads.html',
+        controller: 'AdminAddsController'
+    });
+
+    $routeProvider.when('/admin/users', {
+        templateUrl: 'templates/admin/users.html',
+        controller: 'AdminUsersController'
+    });
+
+    $routeProvider.when('/admin/towns', {
+        templateUrl: 'templates/admin/towns.html',
+        controller: 'AdminTownsController'
+    });
+
+    $routeProvider.when('/admin/categories', {
+        templateUrl: 'templates/admin/categories.html',
+        controller: 'AdminCategoriesController'
+    });
+
     $routeProvider.when('/user/ads', {
         templateUrl: 'templates/user/list-ads.html',
         controller: 'UserAdsController'

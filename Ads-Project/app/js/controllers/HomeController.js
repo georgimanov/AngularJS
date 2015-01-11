@@ -35,7 +35,5 @@ app.controller('HomeController',
 
         $scope.reloadAds();
         $scope.defaultImg = defaultImg;
-
-
     }
 );

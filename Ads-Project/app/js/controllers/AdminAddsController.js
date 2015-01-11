@@ -1,7 +1,7 @@
 'use strict';
 
-app.controller('UserAdsController',
-    function ($scope, $routeParams, $location, townsService, categoriesService, userService, notifyService, pageSize, defaultImg) {
+app.controller('AdminAddsController',
+    function ($scope, $routeParams, $location, townsService, categoriesService, adminServices, notifyService, pageSize, defaultImg) {
         $scope.adsParams = {
             'startPage' : 1,
             'pageSize' : pageSize,
@@ -18,8 +18,8 @@ app.controller('UserAdsController',
         }
 
 
-        $scope.reloadUserAds = function() {
-            userService.getUserAds(
+        $scope.reloadAdminAds = function() {
+            userService.getAdminAds(
                 $scope.adsParams,
                 function success(data) {
                     $scope.ads = data;
@@ -29,7 +29,6 @@ app.controller('UserAdsController',
                 }
             );
         };
-
-        $scope.reloadUserAds();
+        $scope.getAdminAds();
     }
 );
