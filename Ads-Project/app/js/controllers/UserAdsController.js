@@ -28,6 +28,7 @@ app.controller('UserAdsController',
                     notifyService.showError("Cannot load user ads", err);
                 }
             );
+            userService.menuAds;
         };
 
         $scope.reloadUserAds();

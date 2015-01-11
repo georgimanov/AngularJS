@@ -7,6 +7,7 @@
 var app = angular.module('app', ['ngRoute', 'ngResource', 'angular-loading-bar', 'ui.bootstrap.pagination']);
 
 app.constant('baseServiceUrl', 'http://softuni-ads.azurewebsites.net');
+app.constant('defaultImg', 'http://www.paolobugatti.com/img/img-default.png');
 app.constant('pageSize', 2);
 
 app.run(function ($rootScope, $location, authService) {
@@ -17,8 +18,6 @@ app.run(function ($rootScope, $location, authService) {
         }
     });
 });
-
-app.constant('defaultImg', 'http://www.paolobugatti.com/img/img-default.png');
 
 app.config(function ($routeProvider) {
 

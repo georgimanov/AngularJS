@@ -39,7 +39,7 @@ app.factory('userAdsService',
                 return userAdsService.getAll(params, success, error);
             },
 
-            menuAds : function() {
+            menuAds: function() {
                 return true;
             }
         }
