@@ -1,0 +1,5 @@
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.GameLogic\bin\Debug\TicTacToe.GameLogic.dll
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.GameLogic\bin\Debug\TicTacToe.GameLogic.pdb
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.GameLogic\obj\Debug\TicTacToe.GameLogic.csprojResolveAssemblyReference.cache
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.GameLogic\obj\Debug\TicTacToe.GameLogic.dll
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.GameLogic\obj\Debug\TicTacToe.GameLogic.pdb

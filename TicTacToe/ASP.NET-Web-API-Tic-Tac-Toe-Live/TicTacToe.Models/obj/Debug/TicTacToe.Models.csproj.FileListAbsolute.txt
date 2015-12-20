@@ -1,0 +1,14 @@
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\bin\Debug\TicTacToe.Models.dll.config
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\bin\Debug\TicTacToe.Models.dll
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\bin\Debug\TicTacToe.Models.pdb
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\bin\Debug\EntityFramework.dll
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\bin\Debug\EntityFramework.xml
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\obj\Debug\TicTacToe.Models.csprojResolveAssemblyReference.cache
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\obj\Debug\TicTacToe.Models.dll
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Models\obj\Debug\TicTacToe.Models.pdb
