@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Welcome to ...</h1>
+        <h2>Sub title</h2>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-3">
+            <h4>Trips</h4>
+            <p>{{vm.stats.trips}}</p>
+        </div>
+        <div class="col-md-3">
+            <h4>Users</h4>
+            <p>{{vm.stats.users}}</p>
+        </div>
+        <div class="col-md-3">
+            <h4>FinishedTrips</h4>
+            <p>{{vm.stats.finishedTrips}}</p>
+        </div>
+        <div class="col-md-3">
+            <h4>Drivers</h4>
+            <p>{{vm.stats.drivers}}</p>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Latest trips</h3>
+                </div>
+                <div class="panel-success">
+                    <div all-trips />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Latest drivers</h3>
+                </div>
+                <div class="panel-success">
+                    <div all-drivers />
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

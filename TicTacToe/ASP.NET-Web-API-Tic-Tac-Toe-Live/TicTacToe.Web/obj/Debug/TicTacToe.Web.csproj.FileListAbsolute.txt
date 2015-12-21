@@ -81,3 +81,6 @@ C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Web\bin
 C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Web\obj\Debug\TicTacToe.Web.csprojResolveAssemblyReference.cache
 C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Web\obj\Debug\TicTacToe.Web.dll
 C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Web\obj\Debug\TicTacToe.Web.pdb
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Web\bin\Microsoft.Owin.Cors.dll
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Web\bin\System.Web.Cors.dll
+C:\Git\GM-AngularJS\TicTacToe\ASP.NET-Web-API-Tic-Tac-Toe-Live\TicTacToe.Web\bin\Microsoft.Owin.Cors.xml

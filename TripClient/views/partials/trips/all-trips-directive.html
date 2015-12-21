@@ -1,0 +1,20 @@
+<table class="table table-bordered">
+    <tr class="text-center">
+        <th class="text-center">Driver</th>
+        <th class="text-center">From</th>
+        <th class="text-center">To</th>
+        <th class="text-center">Departure Time</th>
+        <th class="text-center">Trip info</th>
+        <th ng-if="vm.identity && vm.identity.isAuthenticated()" class="text-center">Mine</th>
+    </tr>
+    <tr ng-repeat="trip in vm.trips" class="text-center">
+        <td>{{trip.driverName}}</td>
+        <td>{{trip.from}}</td>
+        <td>{{trip.to}}</td>
+        <td>{{trip.departureDate | beautifulDate}}</td>
+        <td><a href="#/trips/{{trip.id}}">details</a></td>
+        <td class="text-center" ng-if="vm.identity && vm.identity.isAuthenticated()">
+            <img ng-src="img/{{trip.isMine ? 'ok.jpg' : 'no-ok.png'}}" />
+        </td>
+    </tr>
+</table>

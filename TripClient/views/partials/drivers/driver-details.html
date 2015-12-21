@@ -1,0 +1,13 @@
+<div class=" container">
+    <div class="row">
+        <h3>Name: {{vm.driver.name}}</h3>
+
+        <p>Upcomming: {{vm.driver.numberOfUpcomingTrips}}</p>
+        <ul>
+            <li ng-repeat="trip in vm.driver.trips">{{trip.from}} -> {{trip.to}} | Mine? :{{trip.isMine}}</li>
+        </ul>
+
+        <p2>Total: {{vm.driver.numberOfTotalTrips}}</p2>
+
+    </div>
+</div>
