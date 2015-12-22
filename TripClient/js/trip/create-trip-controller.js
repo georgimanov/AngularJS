@@ -7,7 +7,7 @@
         cities.getAll()
             .then(function(allCities){
                 vm.cities = allCities;
-            })
+            });
 
         vm.createTrip = function(newTrip){
             trips.createTrip(newTrip)

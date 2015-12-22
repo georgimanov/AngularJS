@@ -12,11 +12,7 @@
                 controller: 'HomeController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
-            .when('/trips/:id',{
-                templateUrl: PARTIALS_PREFIX + 'trips/trip-details.html',
-                controller: 'DetailsTripsController',
-                controllerAs: CONTROLLER_AS_VIEW_MODEL
-            })
+
             .when('/trips',{
                 templateUrl: PARTIALS_PREFIX + 'trips/all-trips.html',
                 controller: 'TripsController',
@@ -25,6 +21,11 @@
             .when('/trips/create',{
                 templateUrl: PARTIALS_PREFIX + 'trips/create-trip.html',
                 controller: 'CreateTripController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
+            .when('/trips/:id',{
+                templateUrl: PARTIALS_PREFIX + 'trips/trip-details.html',
+                controller: 'DetailsTripsController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
             .when('/drivers',{
