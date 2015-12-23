@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="well">
+        <form name="createCommitForm" class="form-horizontal">
+            <fieldset>
+                <legend >
+                    Add new collaborator for project with id: {{vm.projectId}}
+                    <a href="#/projects/{{vm.projectId}}" class="btn btn-primary btn-sm pull-right">Back</a>
+                </legend>
+
+                <div class="form-group">
+                    <label for="collaborator" class="col-md-2 control-label">Collaborator e-mail</label>
+                    <div class="col-md-10">
+                        <input  id="collaborator" type="email" required ng-model="project.Username" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="pull-right">
+                    <button ng-click="vm.addCollaborator(project)" ng-disabled="createCommitForm.$invalid" class="btn btn-primary">
+                        Add
+                    </button>
+                    <a href="#/" class="btn btn-primary">Cancel</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

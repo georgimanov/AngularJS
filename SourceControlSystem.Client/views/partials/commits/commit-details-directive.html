@@ -1,0 +1,8 @@
+<div class="row">
+    <ul ng-repeat="commit in vm.commits">
+        <li>
+            <a href="#/commits/{{commit.Id}}">[{{commit.Id}}]</a>
+            {{commit.UserName}} - {{commit.CreatedOn | beautifulDate}}
+        </li>
+    </ul>
+</div>

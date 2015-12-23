@@ -1,0 +1,112 @@
+<div class="container">
+    <h2 class="text-center">
+        Trips
+        <a href="#/projects/create" ng-show="vm.identity.isAuthenticated()" class="btn btn-sm btn-primary pull-right">Create</a>
+    </h2>
+
+    <div ng-show="vm.identity.isAuthenticated()" class="container">
+
+        <div class="row">
+        <!--"OrderBy" ("date", "collaborators" or "name"), -->
+            <div class="col-md-4">
+            <div class="form-group">
+                <div class="text-center">
+                    <label for="orderBy" class=" control-label">Sort</label></div>
+                <div>
+                    <select class="form-control" required="required" ng-init="vm.request.OrderBy='Date'" ng-model="vm.request.OrderBy" id="orderBy">
+                        <option value="Date">Date</option>
+                        <option value="Collaborators">Collaborators</option>
+                        <option value="Name">Name</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!--"OrderType" ("asc" or "desc"), -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <div class="text-center">
+                    <label for="orderType" class="control-label">Order</label>
+                </div>
+                <div>
+                    <select class="form-control" required="required" ng-init="vm.request.OrderType='asc'" ng-model="vm.request.OrderType" id="orderType">
+                        <option value="asc">Ascending</option>
+                        <option value="desc">Descending</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!--"ByUser" (user e-mail), -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <div class="text-center">
+                    <label for="username" class="control-label"> User Email</label>
+                </div>
+                <div>
+                    <input id="username" type="text" ng-model="vm.request.ByUser" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="row">
+        <!--OnlyPublic-->
+        <div class="col-md-3">
+            <div class="form-group">
+                <div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <input id="onlyPublic" type="checkbox" ng-model="vm.request.OnlyPublic" class="form-control">
+                        </div>
+                        <div class="col-md-9 pull-left">
+                            <label for="onlyPublic">Public</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--PAGE SIZE-->
+        <div class="col-md-3">
+            <div class="form-group">
+                <div class="col-md-6">
+                    <input id="pageSize" min="10" step="10" ng-init="vm.request.PageSize=10" type="number" ng-model="vm.request.PageSize" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                    <label for="pageSize">Page Size</label>
+                </div>
+            </div>
+        </div>
+
+        <!--PAGE-->
+        <div class="col-md-3">
+            <div class="col-md-3">
+                <button class="btn btn-primary" ng-click="vm.prevPage()">&lt;&lt;</button>
+            </div>
+            <div class="col-md-6">
+                <input type="number" ng-model="vm.request.Page" class="form-control" />
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-primary" ng-click="vm.nextPage()">&gt;&gt;</button>
+            </div>
+        </div>
+
+        <!--FILTER-->
+        <div class="col-md-3">
+            <button class="btn btn-lg btn-success pull-right" ng-click="vm.filterProjects()">Filter</button>
+        </div>
+
+    </div>
+
+    </div>
+    <br />
+
+    <div ng-show="vm.projects && vm.projects.length > 0">
+        <div all-projects/>
+    </div>
+    <div ng-hide="vm.projects && vm.projects.length > 0">
+        <h2 class="text-center">No projects!</h2>
+    </div>
+</div>
