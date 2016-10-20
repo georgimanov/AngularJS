@@ -1,0 +1,5 @@
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\SourceControlSystem.Common\bin\Debug\SourceControlSystem.Common.dll
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\SourceControlSystem.Common\bin\Debug\SourceControlSystem.Common.pdb
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\SourceControlSystem.Common\obj\Debug\SourceControlSystem.Common.csprojResolveAssemblyReference.cache
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\SourceControlSystem.Common\obj\Debug\SourceControlSystem.Common.dll
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\SourceControlSystem.Common\obj\Debug\SourceControlSystem.Common.pdb

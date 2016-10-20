@@ -1,0 +1,32 @@
+<div class="container">
+
+    <h1>Project details:
+        <a href="#/projects/{{vm.project.Id}}/addcommits" class="btn btn-info pull-right">Add commit</a>
+
+        <a href="#/projects/{{vm.project.Id}}/addcollaborator" class="btn btn-primary pull-right">Add collaborator</a>
+    </h1>
+    <ul>
+        <li><strong>Id</strong> : {{vm.project.Id}}</li>
+        <li><strong>Name</strong> : {{vm.project.Name}}</li>
+        <li><strong>CreatedOn</strong> : {{vm.project.CreatedOn | beautifulDate}}</li>
+        <li><strong>TotalUsers</strong> : {{vm.project.TotalUsers}}</li>
+        <li><strong>License</strong> : <img ng-src="img/{{vm.project.License}}.png"/></li>
+    </ul>
+
+    <h4>Collaborators:</h4>
+    <div ng-show="vm.collaborators && vm.collaborators.length > 0">
+        <div collaborators />
+    </div>
+    <div ng-hide="vm.collaborators && vm.collaborators.length > 0">
+        <strong>No collaborators!</strong>
+    </div>
+
+    <h4>Commits:</h4>
+    <div ng-show="vm.commits && vm.commits.length > 0">
+        <div commit-details />
+    </div>
+    <div ng-hide="vm.commits && vm.commits.length > 0">
+        <strong>No commits!</strong>
+    </div>
+</div>
+

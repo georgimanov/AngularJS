@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="well">
+        <form name="createCommitForm" class="form-horizontal">
+            <fieldset>
+                <legend >
+                    Create new commit for project with id: {{vm.projectId}}
+                    <a href="#/projects/{{vm.projectId}}" class="btn btn-primary btn-sm pull-right">Back</a>
+                </legend>
+
+
+                <div class="form-group">
+                    <label for="sourceCode" class="col-md-2 control-label">Source Code</label>
+                    <div class="col-md-10">
+                        <textarea id="sourceCode" type="text" required ng-model="commit.sourceCode" class="form-control" >
+
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-hide="true">
+                    <label for="projectId" class="col-md-2 control-label">ProjectId</label>
+                    <div class="col-md-10">
+                         <input  id="projectId" type="text" required ng-model="commit.projectId" ng-init="commit.projectId=vm.projectId" class="form-control" />
+
+                    </div>
+                </div>
+
+
+                <div class="pull-right">
+                    <button ng-click="vm.createCommit(commit)" ng-disabled="createCommitForm.$invalid" class="btn btn-primary">
+                        Create
+                    </button>
+                    <a href="#/" class="btn btn-primary">Cancel</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

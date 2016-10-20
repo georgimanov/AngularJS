@@ -1,0 +1,16 @@
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\SourceControlSystem.Data.dll.config
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\SourceControlSystem.Data.dll
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\SourceControlSystem.Data.pdb
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\EntityFramework.dll
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\SourceControlSystem.Models.dll
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\SourceControlSystem.Models.pdb
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\EntityFramework.xml
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\obj\Debug\SourceControlSystem.Data.csprojResolveAssemblyReference.cache
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\obj\Debug\SourceControlSystem.Data.dll
+C:\Users\georg\Desktop\SPA Exam 2015\SourceControlSystem-Server\Data\SourceControlSystem.Data\obj\Debug\SourceControlSystem.Data.pdb
